@@ -1,0 +1,25 @@
+{
+  "name": "starlens-anatomy-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Interactive anatomical decomposition and explicit regional data mapping",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "test": "node --test tests/atlas.test.mjs tests/molecular.test.mjs tests/studio-*.test.mjs",
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview --host 127.0.0.1 --port 5196"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "three": "0.186.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.1.1",
+    "vite": "8.3.0"
+  }
+}
