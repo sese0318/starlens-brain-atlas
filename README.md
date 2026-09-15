@@ -45,4 +45,16 @@ Pierce B.'s educational brain tool, described by the user, inspired the decompos
 
 ## Deployment
 
-Import this directory as an independent Vercel project with Vite, build command `npm run build`, output directory `dist`, and Node.js 22 or newer. Do not reuse the existing StarLens project's binding. Public deployment has not yet been confirmed in this environment. Refer to the adjacent RELEASE.md for actual status and verification limits.
+Import this directory as an independent Vercel project with Vite, build command `npm run build`, output directory `dist`, and Node.js 22 or newer. Do not reuse the existing StarLens project's binding. The GitHub publication uses the workflow described below. See VERIFICATION.md for verification scope.
+
+## GitHub publication
+
+Repository https://github.com/sese0318/starlens-brain-atlas
+
+Site https://sese0318.github.io/starlens-brain-atlas/
+
+The main branch runs .github/workflows/pages.yml. GitHub Actions installs the locked dependencies, runs the 25 automated checks, builds Vite and deploys dist to GitHub Pages. A successful deployment is required before the site reflects a new commit. Relative asset paths support the repository subdirectory.
+
+To publish a reviewed local commit from this independent checkout, run the tests and build, then push it to the repository's main branch. Review the Publish StarLens run in the repository Actions tab. Workflow dispatch supports a manual redeployment of a selected ref. Repository Settings > Pages controls publication, including unpublishing the site. Disabling the workflow stops future automatic updates but does not remove the existing site.
+
+The original StarLens Sites app, Vercel websites and separate workbench are independent. This repository publishes only Anatomy Studio. No patient data is bundled and uploaded files remain in the browser.

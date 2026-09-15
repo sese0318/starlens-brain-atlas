@@ -1,5 +1,11 @@
 # Verification record
 
+## Publication continuation on 15 September 2026
+
+The existing 25 automated checks and a fresh production build passed. The working tree began clean at 55d31a5053199b8f6600c36708599b420d73bb60. Publication changes add a GitHub Pages workflow and documentation only; application code and anatomy assets are unchanged. Elevated GitHub reads now succeed. No browser connection is available in this session, so interactive desktop, mobile and WebGL verification remains incomplete. Earlier policy failures below describe the preceding session, not the current GitHub permission state. Check the repository Actions run for deployment status.
+
+## Original implementation verification
+
 ## Passed
 
 The production Vite build succeeds after integration and review fixes. Its entry contains the React mount, application module, CSS and Three.js renderer. The final build contains 25 transformed modules.
