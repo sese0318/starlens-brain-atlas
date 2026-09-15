@@ -8,3 +8,6 @@ qa/
 private/
 local_data/
 *.zip
+
+.vercel
+.env*

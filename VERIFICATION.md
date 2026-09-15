@@ -1,5 +1,12 @@
 # Verification record
 
+## Vercel production publication on 15 September 2026
+
+The dedicated starlens-brain-atlas Vercel project deployed successfully with status READY. The primary URL is https://starlens-brain-atlas.vercel.app/ and deployment ID is dpl_3i65fx6mkh6CSFVV1gtGzWEoM8UQ. All 15 anonymous HTTPS requests returned 200 and every file matched the local dist SHA256 hash, including the Windows line endings in the license. Vercel's error-log query returned no matching logs. No browser interaction was tested.
+
+The application source is unchanged from 0cb14fc81e8433ee00e3a8f52269392cc5b595d0. The Vercel CLI added local project metadata and an ignored environment file. No credentials are committed. After the repository owner granted the Vercel GitHub App access, native GitHub connection succeeded. The Vercel project reports sese0318/starlens-brain-atlas with productionBranch main. Deployment results for subsequent commits are available on the repository and Vercel dashboard.
+
+
 ## Publication continuation on 15 September 2026
 
 The existing 25 automated checks and a fresh production build passed. The working tree began clean at 55d31a5053199b8f6600c36708599b420d73bb60. Publication changes add a GitHub Pages workflow and documentation only; application code and anatomy assets are unchanged. Elevated GitHub reads now succeed. No browser connection is available in this session, so interactive desktop, mobile and WebGL verification remains incomplete. Earlier policy failures below describe the preceding session, not the current GitHub permission state. Check the repository Actions run for deployment status.

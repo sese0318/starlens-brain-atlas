@@ -43,15 +43,15 @@ The geometry and numeric contract derive from the existing StarLens atlas at com
 
 Pierce B.'s educational brain tool, described by the user, inspired the decomposition concept. Its page could not be inspected in this environment and its code, meshes and BodyParts3D assets are not included. This app contains 82 selectable structures, not the reference's stated 263 meshes.
 
-## Deployment
+## Vercel deployment
 
-Import this directory as an independent Vercel project with Vite, build command `npm run build`, output directory `dist`, and Node.js 22 or newer. Do not reuse the existing StarLens project's binding. The GitHub publication uses the workflow described below. See VERIFICATION.md for verification scope.
+The primary production deployment is https://starlens-brain-atlas.vercel.app/ . The dedicated Vercel project uses Vite, build command `npm run build`, and output directory `dist`. The production deployment is READY and all 15 public files match the local build. See VERIFICATION.md for verification scope. GitHub source publication is complete. The Vercel GitHub App is connected to this repository and the production branch is `main`. Pushing to `main` starts an automatic Vercel production deployment. Check its deployment status before treating a change as live. Manual publication is also available from this linked directory with `vercel deploy --prod --yes`.
 
-## GitHub publication
+## GitHub source and secondary Pages deployment
 
 Repository https://github.com/sese0318/starlens-brain-atlas
 
-Site https://sese0318.github.io/starlens-brain-atlas/
+Primary site https://starlens-brain-atlas.vercel.app/
 
 The main branch runs .github/workflows/pages.yml. GitHub Actions installs the locked dependencies, runs the 25 automated checks, builds Vite and deploys dist to GitHub Pages. A successful deployment is required before the site reflects a new commit. Relative asset paths support the repository subdirectory.
 
