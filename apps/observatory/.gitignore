@@ -1,0 +1,32 @@
+# Local dependencies and build output
+node_modules/
+dist/
+.vercel/
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+
+# Credentials and private research inputs
+.env
+.env.*
+*.env
+credentials/
+private/
+research/
+local_data/
+raw_data/
+local_aggregates.json
+**/local_aggregates.json
+atrophy_data.csv
+parcellated_petfiles.csv
+demographics*.csv
+residuals*.csv
+subjects*.csv
+
+# Local review packages
+release_control/
+qa/
+*.zip
+
+prototype-dist/

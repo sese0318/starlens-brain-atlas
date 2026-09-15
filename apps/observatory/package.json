@@ -1,0 +1,32 @@
+{
+  "name": "dopateam-research-code",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "description": "DopaTeam regional comparison and conditional model with an independent numerical reference",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "demo": "node scripts/demo.mjs",
+    "demo:atlas": "node scripts/generate_dummy_atlas.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "states": "node scripts/state_demo.mjs",
+    "reference": "python3 scripts/reference.py --pretty",
+    "test:python": "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "dev": "vite --host 127.0.0.1 --port 5184",
+    "build": "vite build",
+    "postbuild": "node scripts/public-entry.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 5184",
+    "compare": "node scripts/compare_bundle.mjs"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "three": "0.186.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.1.1",
+    "vite": "8.3.0"
+  }
+}

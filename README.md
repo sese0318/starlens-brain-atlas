@@ -1,4 +1,17 @@
-# StarLens Anatomy Studio
+# StarLens 3D apps
+
+## Choose the 3D app
+
+| App | Vercel URL | Source |
+| --- | --- | --- |
+| Original Neural Observatory, the first 3D app | https://starlens-brain-atlas.vercel.app/observatory | apps/observatory |
+| Later Anatomy Studio with decomposition | https://starlens-brain-atlas.vercel.app/ | src |
+
+The original Observatory is the same version 5 source published at https://starlens-brain-atlas.sese16180.chatgpt.site/observatory, commit 25c9d10b449edf017f7ab84923aeab2a32496276. Both apps now live in this repository. The later unpublished Workbench redesign is a separate task and is not included. See apps/observatory/SOURCE.md for the exact origin and build integration.
+
+Root npm ci installs both applications. Root npm test runs 25 Anatomy checks and 38 original Observatory checks, including a Python standard-library reference. Root npm run build produces both apps in dist. Configure Vercel at the repository root, not apps/observatory. The original snapshot's deployment docs, vercel.json and .vercelignore are historical, and the root configuration is authoritative.
+
+## Anatomy Studio guide
 
 A separate interactive brain explorer combining anatomical decomposition with StarLens regional data comparison. Existing StarLens sites remain independent.
 
@@ -45,7 +58,7 @@ Pierce B.'s educational brain tool, described by the user, inspired the decompos
 
 ## Vercel deployment
 
-The primary production deployment is https://starlens-brain-atlas.vercel.app/ . The dedicated Vercel project uses Vite, build command `npm run build`, and output directory `dist`. The production deployment is READY and all 15 public files match the local build. See VERIFICATION.md for verification scope. GitHub source publication is complete. The Vercel GitHub App is connected to this repository and the production branch is `main`. Pushing to `main` starts an automatic Vercel production deployment. Check its deployment status before treating a change as live. Manual publication is also available from this linked directory with `vercel deploy --prod --yes`.
+The primary production deployment is https://starlens-brain-atlas.vercel.app/ . The dedicated Vercel project uses Vite, build command `npm run build`, and output directory `dist`. The combined build contains 26 files. See VERIFICATION.md for verification scope and check the latest Vercel deployment before treating new routes as live. GitHub source publication is complete. The Vercel GitHub App is connected to this repository and the production branch is `main`. Pushing to `main` starts an automatic Vercel production deployment. Check its deployment status before treating a change as live. Manual publication is also available from this linked directory with `vercel deploy --prod --yes`.
 
 ## GitHub source and secondary Pages deployment
 
@@ -53,8 +66,8 @@ Repository https://github.com/sese0318/starlens-brain-atlas
 
 Primary site https://starlens-brain-atlas.vercel.app/
 
-The main branch runs .github/workflows/pages.yml. GitHub Actions installs the locked dependencies, runs the 25 automated checks, builds Vite and deploys dist to GitHub Pages. A successful deployment is required before the site reflects a new commit. Relative asset paths support the repository subdirectory.
+The main branch runs .github/workflows/pages.yml. GitHub Actions installs the locked dependencies, runs the 63 automated checks, builds Vite and deploys dist to GitHub Pages. A successful deployment is required before the site reflects a new commit. Relative asset paths support the repository subdirectory.
 
 To publish a reviewed local commit from this independent checkout, run the tests and build, then push it to the repository's main branch. Review the Publish StarLens run in the repository Actions tab. Workflow dispatch supports a manual redeployment of a selected ref. Repository Settings > Pages controls publication, including unpublishing the site. Disabling the workflow stops future automatic updates but does not remove the existing site.
 
-The original StarLens Sites app, Vercel websites and separate workbench are independent. This repository publishes only Anatomy Studio. No patient data is bundled and uploaded files remain in the browser.
+The original StarLens Sites app, Vercel websites and separate workbench are independent. This repository publishes both the original Neural Observatory and the later Anatomy Studio. No patient data is bundled and uploaded files remain in the browser.

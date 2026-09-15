@@ -1,0 +1,7 @@
+# Only the three public pages, shared styling and deployment configuration are uploaded.
+*
+!index.html
+!impact.html
+!hackathon.html
+!site.css
+!vercel.json

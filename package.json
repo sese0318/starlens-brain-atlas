@@ -8,10 +8,12 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "test": "node --test tests/atlas.test.mjs tests/molecular.test.mjs tests/studio-*.test.mjs",
-    "build": "vite build",
+    "test": "node --test tests/atlas.test.mjs tests/molecular.test.mjs tests/studio-*.test.mjs && npm --prefix apps/observatory test",
+    "build": "npm run build:anatomy && npm --prefix apps/observatory run build && node scripts/merge-observatory.mjs",
     "dev": "vite",
-    "preview": "vite preview --host 127.0.0.1 --port 5196"
+    "preview": "vite preview --host 127.0.0.1 --port 5196",
+    "build:anatomy": "vite build",
+    "postinstall": "npm ci --prefix apps/observatory"
   },
   "dependencies": {
     "react": "19.3.0",

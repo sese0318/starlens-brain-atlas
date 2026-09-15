@@ -1,0 +1,12 @@
+
+/* The color key is shared by the workspace and the observatory. */
+.brain-color-key{background:#f3f6f7;color:#24353e;border:1px solid #bcc9d0;border-radius:8px;padding:16px;font-size:13px;line-height:1.5;margin-top:12px;max-width:520px}
+.color-key-heading{display:flex;flex-direction:column;margin-bottom:8px;gap:2px}.color-key-heading b{font-size:14px}.color-key-heading>span{font-size:12px}
+.color-key-ends,.color-key-ticks{display:flex;justify-content:space-between;font-size:12px;font-variant-numeric:tabular-nums}
+.color-key-ramp{height:14px;border-radius:3px;position:relative;margin:6px 0}.color-key-ramp>i{position:absolute;top:-4px;bottom:-4px;width:3px;transform:translateX(-50%);background:#fff;box-shadow:0 0 0 1px #14232b}
+.color-key-selection{display:flex;gap:8px;align-items:center;margin:12px 0 8px}.color-key-selection b{font-variant-numeric:tabular-nums;white-space:nowrap}
+.color-swatch{display:inline-block;width:20px;height:20px;border-radius:4px;border:1px solid #ffffff88;flex-shrink:0}.missing-swatch{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}.brain-color-key>small{display:block;font-size:11px}
+.anatomy-key{display:flex;align-items:center;gap:12px}.anatomy-key b,.anatomy-key small{display:block}.anatomy-key small{font-size:12px;margin-top:3px}
+.restore-colors{display:block;background:#f4e5bb;color:#1d3038;border:1px solid #a98843;border-radius:4px;font-size:12px;padding:8px;margin-top:10px;width:100%}
+.brain-data-truth{font-size:13px;line-height:1.7;padding:12px;background:#fff4d5;border:1px solid #d2b877;border-radius:8px;color:#503e17}
+
