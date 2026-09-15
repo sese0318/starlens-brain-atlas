@@ -3,5 +3,11 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {"source": "/observatory", "destination": "https://starlens-neural-observatory.vercel.app/", "permanent": false},
+    {"source": "/observatory.html", "destination": "https://starlens-neural-observatory.vercel.app/", "permanent": false},
+    {"source": "/prototype", "destination": "https://starlens-neural-observatory.vercel.app/prototype", "permanent": false},
+    {"source": "/prototype.html", "destination": "https://starlens-neural-observatory.vercel.app/prototype", "permanent": false}
+  ]
 }

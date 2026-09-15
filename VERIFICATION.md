@@ -1,13 +1,5 @@
 # Verification record
 
-## Original Observatory integration on 15 September 2026
-
-The Sites API confirmed current version 5 and source commit 25c9d10b449edf017f7ab84923aeab2a32496276 for the requested original /observatory page. That committed snapshot was exported under apps/observatory, excluding only the old Sites identity. The original application and atlas files are unchanged. The later unpublished Workbench at ca245175 is excluded.
-
-Both suites passed, 25 Anatomy checks plus 38 Observatory checks. Both production builds passed. The merger added 11 outputs and shared 12 byte-identical atlas assets, while preserving the Anatomy root entry. It rejects unequal duplicate files. The Anatomy Original atlas link now points to the new local Observatory route. Vercel clean URLs are enabled and trailing slashes are disabled to preserve the original relative asset paths.
-
-A read-only independent audit checked route behavior, atlas collisions, Python test requirements, source scope and retained licenses. Browser connection is unavailable, so interactive visual verification cannot be claimed. Deployment and HTTP evidence are recorded in the adjacent publication handoff outside the source repo.
-
 ## Vercel production publication on 15 September 2026
 
 The dedicated starlens-brain-atlas Vercel project deployed successfully with status READY. The primary URL is https://starlens-brain-atlas.vercel.app/ and deployment ID is dpl_3i65fx6mkh6CSFVV1gtGzWEoM8UQ. All 15 anonymous HTTPS requests returned 200 and every file matched the local dist SHA256 hash, including the Windows line endings in the license. Vercel's error-log query returned no matching logs. No browser interaction was tested.
@@ -42,3 +34,10 @@ The approximately 819 KB uncompressed application JavaScript bundle triggers Vit
 ## Clinical scope
 
 No patient MRI, measured atrophy, study receptor values, image registration or clinical validation has been connected. The demo values are synthetic. Imported values are checked for structure and identifier alignment only.
+
+
+## Repository separation on 15 September 2026
+
+The user requested a separate repository for the original Observatory. The temporary integration was reverted while preserving Git history. Anatomy returns to its standalone build and25 checks. Its Original atlas link and legacy Observatory/prototype routes now lead to https://starlens-neural-observatory.vercel.app/ . No original Observatory application source remains in this repository's current tree.
+
+The independent app passed38 tests, built successfully, deployed from its own GitHub main and returned the correct root title and all24 public assets. Historical combined-deployment records are superseded.
