@@ -65,3 +65,12 @@ The original StarLens Sites app, Vercel websites and separate workbench are inde
 This repository contains only the later Anatomy Studio. The original Neural Observatory has its own repository at https://github.com/sese0318/starlens-neural-observatory and its own Vercel project at https://starlens-neural-observatory.vercel.app/ .
 
 The temporary apps/observatory integration was removed from the current branch without rewriting history. Previous /observatory and /prototype URLs redirect to the independent site. Future changes to the original app belong in its separate repository.
+
+## License
+
+The StarLens source code is released under the [MIT License](LICENSE).
+FreeSurfer-derived brain surface data in `public/atlas/` (`lh.json`, `rh.json`,
+`subcortex.json` and their provenance/validation metadata) is **not** MIT-licensed: it
+remains under the FreeSurfer Software License Agreement from The General Hospital
+Corporation (MGH), reproduced in [`public/atlas/LICENSE-FreeSurfer.txt`](public/atlas/LICENSE-FreeSurfer.txt).
+See [NOTICE.md](NOTICE.md) and [`public/atlas/PROVENANCE.md`](public/atlas/PROVENANCE.md).
